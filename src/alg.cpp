@@ -20,8 +20,8 @@ uint64_t nPrime(uint64_t n) {
     if (n == 1) {
         return 2;
     }
-    uint64_t count = 1; 
-    uint64_t num = 3; 
+    uint64_t count = 1;
+    uint64_t num = 3;
     while (count < n) {
         bool isPrime = true;
         for (uint64_t i = 2; i * i <= num; i++) {
@@ -33,9 +33,9 @@ uint64_t nPrime(uint64_t n) {
         if (isPrime) {
             count++;
         }
-        num += 2; 
+        num += 2;
     }
-    return num - 2; 
+    return num - 2;
 }
 
 uint64_t nextPrime(uint64_t value) {
